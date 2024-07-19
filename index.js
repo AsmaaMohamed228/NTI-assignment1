@@ -35,5 +35,17 @@ async function setText(){
  rating.textContent= result.rating;
  title.textContent= result.title;
 }
-
 setText();
+
+
+async function pagination(){
+
+
+
+
+
+
+
+
+}
+

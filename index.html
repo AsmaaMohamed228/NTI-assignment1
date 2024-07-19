@@ -1,27 +1,106 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Store</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel="stylesheet" href="index.css">
     <script defer src='index.js'></script>
 
 </head>
-
 <body>
-   category: <span id="category"> </span>  <br>
-   description:  <span id="description"> </span>  <br>
-   id:   <span id="id"> </span>          <br>
-   image:   <span id="image"> </span>       <br>
-   price:    <span id="price"> </span>      <br>
-   rating:   <span id="rating"> </span>      <br>
-   title:     <span id="title"> </span>     <br>
-   
+    <div class="main-container">
 
- 
+
+        <div class="header-filters-cart">
+
+            <header>
+                <h1>My Store</h1>
+            </header>
+
+            <div class="search-filters">
+                <input type="text" placeholder="Search for products...">
+                <select>
+                    <option>All Categories</option>
+                </select>
+                <input type="number" placeholder="Min Price">
+                <input type="number" placeholder="Max Price">
+                <button>Apply Filters</button>
+                <select>
+                    <option>sort by Price</option>
+                </select>
+            </div>
+
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul>
+                    <li>Mens Cotton Jacket - $65.99 <button>Remove</button></li>
+                    <li>Mens Casual Premium Slim Fit T-Shirts - $22.3 <button>Remove</button></li>
+                </ul>
+                <p>Total Quantity: 2</p>
+                <p>Total Price: $78.29</p>
+            </div>
+
+        </div>
+
+        <!--////////////////////////////////////////////-->
+
+        <div class="product-grid">
+
+            <div class="product">
+                <img alt="Backpack" id="image">
+                <h3 id="title"></h3>
+                <p id="price"></p>
+                <button>View Details</button>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img alt="t-shirt" id="image">
+                <h3 id="title"></h3>
+                <p id="price"></p>
+                <button>View Details</button>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img alt="Jacket" id="image">
+                <h3 id="title"></h3>
+                <p id="price"></p>
+                <button>View Details</button>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img alt="slim fit" id="image">
+                <h3 id="title"></h3>
+                <p id="price"></p>
+                <button>View Details</button>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img alt="Bracelet" id="image">
+                <h3 id="title"></h3>
+                <p id="price"></p>
+                <button>View Details</button>
+                <button>Add to Cart</button>
+            </div>
+
+
+        </div>
+
+        <!--///////////////////////////////////////-->
+
+        <div class="pagination">
+            <button>Previous</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>Next</button>
+        </div>
+
+    </div>
 </body>
-
 </html>
